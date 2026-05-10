@@ -14,7 +14,7 @@ if response.status_code == 200:
     print(f"Current time: {data["current"]["time"][-5:]}")
     print(f"Current temperature: {data["current"]["temperature_2m"]}°F")
     print("----")
-    print("7-day forecast:1232132113231")
+    print("7-day forecast:")
     for i, day in enumerate(data["daily"]["time"]):
         print(f" {day}: {data["daily"]["temperature_2m_min"][i]}°F - {data["daily"]["temperature_2m_max"][i]}°F")
 else:
